@@ -15,7 +15,7 @@ public class Ceballos_Moises_Lab1_Variables {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.print("HOLA");
+        System.out.print("PEso pluma");
     }
     
 }
