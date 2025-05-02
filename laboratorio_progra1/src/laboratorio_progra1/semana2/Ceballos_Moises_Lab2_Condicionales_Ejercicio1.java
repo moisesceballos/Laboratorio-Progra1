@@ -13,13 +13,22 @@ public class Ceballos_Moises_Lab2_Condicionales_Ejercicio1 {
         String fechaIngresada = sc.next();
         String diaTexto = fechaIngresada.substring(0, fechaIngresada.indexOf(",")).toLowerCase(); // da "dia" // guarda el substring
         String fechaSolo = fechaIngresada.substring(fechaIngresada.indexOf(",") + 1).trim();; // da "DD/MM" // giarda el substring
-        System.out.println(fechaSolo);//provisional
-        System.out.println(diaTexto);
         
         
-        if (!diaTexto.equals("lunes")  ){
         
-    }
+        if (diaTexto.equals("lunes") ){
+            //nivel inicial     
+        } else if(diaTexto.equals("martes")){
+            //nivel intermedio
+        } else if (diaTexto.equals("miercoles")){
+            // nivel avanzado
+        } else if (diaTexto.equals("jueves")){
+            // practica hablada
+        } else if (diaTexto.equals("viernes")){
+            // ingles para viajeros
+        } else{
+            System.out.println("ERROR");
+        }
         
         
         

@@ -18,9 +18,9 @@ public class Ceballos_Moises_Lab2_Condicionales_Ejercicio4 {
        
         */ 
         
-        System.out.print("Ingrese una fecha 1 (Dia/Mes/Ano) ");
+        System.out.print("Ingrese una fecha 1 (DD/MM/YY) ");
         String fecha1 = sc.next();
-        System.out.print("Ingrese una fecha 2 (Dia/Mes/Ano) ");
+        System.out.print("Ingrese una fecha 2 (DD/MM/YY) ");
         String fecha2 = sc.next();
         
         int dia1 = Integer.parseInt(fecha1.substring(0,2));
