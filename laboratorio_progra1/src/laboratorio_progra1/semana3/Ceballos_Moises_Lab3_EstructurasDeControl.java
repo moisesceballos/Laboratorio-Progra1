@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package laboratorio_progra1.semana3;
 
 import java.util.Scanner;
@@ -25,7 +22,7 @@ public class Ceballos_Moises_Lab3_EstructurasDeControl {
             opcion = sc.nextInt();
             
             switch(opcion){
-                case 1: //PALABRA AL REVES TERMINADO
+                case 1: 
                     System.out.println("***PALABRA AL REVES***");
                     
                     int cantPalabras = -1;
@@ -67,10 +64,7 @@ public class Ceballos_Moises_Lab3_EstructurasDeControl {
                         }else if (reverso.equals(palabra)){
                                 palindromo="si";
                             }
-                        
-                       
-                        
-                        
+                 
                     }
                     
                     System.out.println("\nPalabras mas larga: " + palabraMasLarga);
@@ -78,17 +72,14 @@ public class Ceballos_Moises_Lab3_EstructurasDeControl {
                                
                     break;
                     
-                case 2: //NUMERO PERFECTO
+                case 2: 
+                    
                     System.out.println("***NUMERO PERFECTO***");
                     int numero = -1;
                     
                     int sumadiv = 0;
                     
-                    /* 2- Número perfecto. Al escoger esta opción debe hacer un 
-                    programa que determine si el número ingresado es un número perfecto. 
-                    Un número es perfecto si la suma de sus divisores (excepto el mismo número) es igual al número
-                    
-                    */
+                  
                     while(numero<0){
                         
                     System.out.println("Ingrese un numero: ");
@@ -107,44 +98,38 @@ public class Ceballos_Moises_Lab3_EstructurasDeControl {
                     } else {
                          System.out.println(numero + " no es un numero perfecto.");
                     }
-                    
-                        
-                    
+                  
                     break;
+    
+                case 3: 
                     
-                case 3: //PRIMOS
+                 
+                    System.out.println("***PRIMOS***");
                     
+                    int min = 10;
+                    int max = 100;
+                    int numeroA = (int) (Math.random() * (max - min + 1)) + min;
+                    
+                    System.out.println("Numero generado: " + numeroA);
+                    
+                    int numDivisores = 0;
+                    int divisor = 1;
+                    
+                     for (divisor = 1; divisor <= numeroA; divisor++) {
+                        if (numeroA % divisor == 0) { 
+                            numDivisores++; 
+                        }
+                     }
+                     
+                     if (numDivisores == 2) { 
+                        System.out.println(numeroA + " es un numero primo.");
+                     } else {
+                         System.out.println(numeroA + " no es un numero primo.");
+                     }
+
                     break;
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                case 4: //VOTACIONES TERMINADO
+             
+                case 4: 
                     int votantes = -1;
                     
                     
@@ -233,19 +218,10 @@ public class Ceballos_Moises_Lab3_EstructurasDeControl {
                         }
 
                         }
-                        
-                       
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
+         
                     }
                     
-                    
+                  
                     if (votos_validos >= votos * 0.6){
                     System.out.println("\n*** RESULTADOS FINALES ***");
                     System.out.println("VOTOS TOTALES: " + votos + " votos");
@@ -272,75 +248,16 @@ public class Ceballos_Moises_Lab3_EstructurasDeControl {
                         System.out.println("MNESAJE: VOTACION FALLIDA");
                     }
                     
-                    
-                    
+ 
                     break;
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                case 5: //Salir del Sistema
+ 
+                case 5:
                     System.out.println("Saliendo del sistema...");
                     break;
               
                 
             }
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+    
         }while(opcion!=5);
         
         
