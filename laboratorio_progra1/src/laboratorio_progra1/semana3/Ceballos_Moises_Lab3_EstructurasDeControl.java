@@ -22,7 +22,7 @@ public class Ceballos_Moises_Lab3_EstructurasDeControl {
             opcion = sc.nextInt();
             
             switch(opcion){
-                case 1: 
+                case 1: //PALABRA AL REVES
                     System.out.println("***PALABRA AL REVES***");
                     
                     int cantPalabras = -1;
@@ -72,7 +72,7 @@ public class Ceballos_Moises_Lab3_EstructurasDeControl {
                                
                     break;
                     
-                case 2: 
+                case 2: //NUMERO PERFECTO
                     
                     System.out.println("***NUMERO PERFECTO***");
                     int numero = -1;
@@ -101,7 +101,7 @@ public class Ceballos_Moises_Lab3_EstructurasDeControl {
                   
                     break;
     
-                case 3: 
+                case 3: //PRIMOS
                     
                  
                     System.out.println("***PRIMOS***");
@@ -129,7 +129,7 @@ public class Ceballos_Moises_Lab3_EstructurasDeControl {
 
                     break;
              
-                case 4: 
+                case 4: //VOTACIONES
                     int votantes = -1;
                     
                     
@@ -251,7 +251,7 @@ public class Ceballos_Moises_Lab3_EstructurasDeControl {
  
                     break;
  
-                case 5:
+                case 5: //SALIR DEL SISTEMA
                     System.out.println("Saliendo del sistema...");
                     break;
               
